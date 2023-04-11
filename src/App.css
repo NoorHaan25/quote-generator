@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  background: rgb(33,0,36);
+  background: linear-gradient(90deg, rgba(33,0,36,1) 0%, rgba(121,9,119,1) 54%, rgba(209,0,255,1) 100%);
+  height: 100vh;
+  position: relative;
+ 
+  z-index: 1;
+}
+section::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 20%);
+  inset: 0;
+  z-index: -1
+}
+.card-quote{
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.card-quote-body{
+  color: #790977;
+  text-align: center;
+  width: 430px;
+}
+.card-quote-body > button{
+  border: none;
+  padding: 10px 50px;
+  background-color:#790977;
+  color: #fff;
+}
+.card-quote-body h5{
+  font-weight: bold;
+  font-size: 30px;
+}
+.circle{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color:#790977 ;
+  border-radius: 50%;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle > span{
+  font-size: 200px;
+    color: #fff;
+}
+.quote-header{
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  font-family: 'Poor Story', cursive;
+  font-size: 20px;
+}
+.quote-header > h1{
+  font-size: 62px;
+  font-weight: bold;
+}
+.parent-loader{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: #790977 ;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
